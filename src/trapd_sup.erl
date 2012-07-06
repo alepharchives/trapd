@@ -35,8 +35,7 @@ init([]) ->
 	Parser = {trap_parser, {trap_parser, start_link, [ParserDir]},
         permanent, 5000, worker, [trap_parser]},
 
-	{ok, AddrMappingDir} = application:get_env(addr_mapping_dir),
-	Trapd = {trapd, {trapd, start_link, [AddrMappingDir]},
+	Trapd = {trapd, {trapd, start_link, []},
         permanent, 5000, worker, [trapd]},
 
 	{ok, {{one_for_one, 10, 3600}, [Logger, Mapper, Filter, Parser, Trapd]}}.
