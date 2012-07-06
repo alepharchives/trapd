@@ -127,7 +127,7 @@ handle_info({trap, #trap2{addr = Addr} = Trap}, State) ->
 	end,
     NewTrap = Trap#trap2{addr = NewAddr},
     trapd_log:log(received, NewTrap),
-    trap_parser:parser(NewTrap),
+    trap_parser:parse(NewTrap),
 	{noreply, State};
 
 handle_info({deliver, <<"ping">>, _, _}, #state{channel = Channel} = State) ->
