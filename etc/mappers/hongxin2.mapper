@@ -314,3 +314,16 @@
     {summary,	"AC与AP间系统时钟同步失败通告。详细: $alarmCause"}
 ]}.
 
+{mapper, "1.3.6.1.4.1.33940.6.1.5.1.22", acTemperatureTooHighTrap, [
+	{severity, major},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警, 详细: $alarmAdditionalInfo"}
+]}.
+
+{mapper, "1.3.6.1.4.1.33940.6.1.5.1.23", acTemperatureTooHighTrap, [
+	{severity, clear},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警已清除, 详细: $alarmAdditionalInfo"}
+]}.
+
+

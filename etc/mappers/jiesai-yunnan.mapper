@@ -319,3 +319,34 @@
 	{summary,	"AC设备与AP间系统时钟同步失败通告, 详细信息: $alarmInfo"}
 ]}.
 
+
+%%ap trap 
+{"1.3.6.1.4.1.34230.1.10.12.10.1.5", 
+acTemperatureTooHighTrap, major, {apid, "$alarmNeName"},
+"cpuUsageTooHighTrap_$alarmNeName",          
+"AC设备温度过高告警, AP标识: $alarmNeName, 详细信息: $alarmInfo",
+[{1, alarmSn, string},	
+{2, alarmNeName, string},
+{3, alarmLevel, string}, 
+{4, alarmType, string}, 
+{5, alarmReasonID, integer},
+{6, alarmReason, string},
+{7, alarmRaiseTime, string},
+{9, alarmTitle, string},
+{10, alarmInfo, string}]}.
+
+{"1.3.6.1.4.1.34230.1.10.12.10.1.17", 
+acTemperatureTooHighTrap, clear, {apid, "$alarmNeName"},
+"cpuUsageTooHighTrap_$alarmNeName",          
+"AC设备温度过高告警, AP标识: $alarmNeName, 详细信息: $alarmInfo",
+[{1, alarmSn, string},	
+{2, alarmNeName, string},
+{3, alarmLevel, string}, 
+{4, alarmType, string}, 
+{5, alarmReasonID, integer},
+{6, alarmReason, string},
+{7, alarmRaiseTime, string},
+{9, alarmTitle, string},
+{10, alarmInfo, string}]}.
+
+

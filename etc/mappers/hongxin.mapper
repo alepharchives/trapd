@@ -371,3 +371,16 @@
 	{summary,	"AC与AP间系统时钟同步失败通告, AP网元标识: $apmac, AP序列号: $apsn, AP MAC地址: $apmac"}
 ]}.
 
+{mapper, "1.3.6.1.4.1.33940.6.1.5.1.22", acTemperatureTooHighTrap, [
+	{severity, major},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警,MAC地址：$acmac, 网元标识: $acid"}
+]}.
+
+{mapper, "1.3.6.1.4.1.33940.6.1.5.1.23", acTemperatureTooHighTrap, [
+	{severity, clear},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警已清除, MAC地址：$acmac, 网元标识: $acmac"}
+]}.
+
+

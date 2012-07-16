@@ -1,0 +1,297 @@
+%%%-----------------------------------------------------------------------------
+%%%xinyou trap 
+%%%-----------------------------------------------------------------------------
+%%ap 
+{"1.3.6.1.4.1.29917.6.1.4.0.13", 
+cpuUsageTooHighTrap, major, {apid, "$apmac"},
+"cpuUsageTooHighTrap_$apmac",          
+"AP设备CPU利用率过高告警, AP标识: $apmac, CPU占用率: $cpuUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.0.14", 
+cpuUsageTooHighTrap, clear, {apid, "$apmac"},
+"cpuUsageTooHighTrap_$apmac",          
+"AP设备CPU利用率过高告警已清除, AP标识: $apmac, CPU占用率: $cpuUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.0.15", 
+memUsageTooHighTrap, major, {apid, "$apmac"},
+"memUsageTooHighTrap_$apmac",
+"AP设备内存利用率过高告警, AP标识: $apmac, 当前内存占用率: $memUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.0.16", 
+memUsageTooHighTrap, clear, {apid, "$apmac"},
+"memUsageTooHighTrap_$apmac",
+"AP设备内存利用率过高告警, AP标识: $apmac, 当前内存占用率: $memUsage",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.0.23",  
+apOfflineTrap, major, {apid, "$apmac"},
+"apOfflineTrap",
+"AP设备下线告警, AP标识: $apmac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.0.22",
+apOfflineTrap, clear, {apid, "$apmac"},
+"apOfflineTrap",
+"AP设备上线通告, AP标识: $apmac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.0.19",
+apMtWorkModeChgTrap, major, {apid, "$apmac"},
+"apMtWorkModeChgTrap_$apmac",
+"AP设备无线监视工作模式变更通告, AP标识: $apmac",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.1.2", 
+cochAPInterfDetectedTrap, major, {apid, "$apmac"},
+"cochAPInterfDetectedTrap_$apmac",
+"同频AP干扰告警, AP标识: $apmac, 当前信道: $channelID",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.12", 
+cochAPInterfDetectedTrap, clear, {apid, "$apmac"},
+"cochAPInterfDetectedTrap_$apmac",
+"同频AP干扰告警已清除, AP标识: $apmac, 当前信道: $channelID",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.1.41", 
+adjacentChAPInterfDetectedTrap, major, {apid, "$apmac"},
+"adjacentChAPInterfDetectedTrap_${apmac}",
+"邻频AP干扰告警, AP标识: $apmac, 当前信道: $channelId",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.42", 
+adjacentChAPInterfDetectedTrap, clear, {apid, "$apmac"},
+"adjacentChAPInterfDetectedTrap_${apmac}",
+"邻频AP干扰告警已清除, AP标识: $apmac, 当前信道: $channelId",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.1.3", 
+staInterfDetectedTrap, major, {apid, "$apmac"},
+"staInterfDetectedTrap_${apmac}_$staMac",
+"STA终端干扰告警, AP标识: $apmac, RadioID: $radioId, 当前信道: $channelId, STA MAC: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.13", 
+staInterfDetectedTrap, clear, {apid, "$apmac"},
+"staInterfDetectedTrap_${apmac}_$staMac",
+"STA终端干扰告警, AP标识: $apmac, RadioID: $radioId, 当前信道: $channelId, STA MAC: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.14", 
+otherDeviceInterfDetectedTrap, major, {apid, "$apmac"},
+"otherDeviceInterfDetectedTrap_$apmac",
+"其他设备干扰告警, AP标识: $apmac, RadioID: $radioId, 当前信道: $channelId",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.15", 
+otherDeviceInterfDetectedTrap, clear, {apid, "$apmac"},
+"otherDeviceInterfDetectedTrap_$apmac",
+"其他设备干扰告警已清除, AP标识: $apmac, RadioID: $radioId, 当前信道: $channelId",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.1.18", 
+radioDownTrap, major, {apid, "$apmac"},
+"radioDownTrap_${apmac}_$radioId",
+"AP无线链路中断告警, AP标识: $apmac, RadioID: $radioId",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.19", 
+radioDownTrap,clear, {apid, "$apmac"},
+"radioDownTrap_${apmac}_$radioId",
+"AP无线链路中断告警, AP标识: $apmac, RadioID: $radioId",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.1.5", 
+apStaFullTrap, major, {apid, "$apmac"},
+"apStaFullTrap_$apmac",
+"AP设备无法增加新的移动用户告警, AP标识: $apmac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.37", 
+apStaFullTrap, clear, {apid, "$apmac"},
+"apStaFullTrap_$apmac",
+"AP设备无法增加新的移动用户告警已清除, AP标识: $apmac",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.4.0.3",  
+apMtRdoChanlChgTrap, major, {apid, "$apmac"},
+"apMtRdoChanlChgTrap_${apmac}",
+"AP设备无线信道变更通告, AP标识: $apmac, RadioID: $radioId, 信道号: $ChannelId",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.21",  
+staAuthErrorTrap, major, {apid, "$apmac"},
+"staAuthErrorTrap_${apmac}_$staMac",
+"STA终端鉴权失败通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac, 详细: $alarmInfo",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.22",
+stAssociationFailTrap, major, {apid, "$apmac"},
+"staAuthErrorTrap_${apmac}_$staMac",
+"STA终端关联失败通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.23",    
+userWithInvalidCerficationInbreakNetworkTrap, major, {apid, "$apmac"},
+"userWithInvalidCerficationInbreakNetworkTrap_${apmac}_$staMac",
+"STA非法证书用户侵入网络通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.24", 
+stationRepititiveAttackTrap, major, {apid, "$apmac"},
+"stationRepititiveAttackTrap_${apmac}_$staMac",
+"STA客户端重放攻击通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.25", 
+tamperAttackTrap, major, {apid, "$apmac"},
+"tamperAttackTrap_${apmac}_$staMac",
+"STA篡改攻击通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.26",
+lowSafeLevelAttackTrap, major, {apid, "$apmac"},
+"lowSafeLevelAttackTrap_${apmac}_$staMac",
+"STA安全等级降低攻击通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.4.1.27", 
+addressRedirectionAttackTrap, major, {apid, "$apmac"},
+"addressRedirectionAttackTrap_${apmac}_$staMac",
+"STA地址重定向攻击通告, AP标识: $apmac, RadioID: $radioId, 终端MAC地址: $staMac",
+[]}.
+
+%%---
+%%ac
+%%---
+{"1.3.6.1.4.1.29917.6.1.5.1.18",    
+powerOffTrap, major, 
+"powerOffTrap_$idx",
+"AC设备电源掉电告警",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.19",    
+powerOffTrap, clear,
+"powerOffTrap_$idx",
+"AC设备电源掉电告警已清除",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.6",     
+acCPUusageTooHighTrap, major,
+"acCPUusageTooHighTrap",
+"AC设备CPU利用率过高告警, 当前CPU利用率: $cpuUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.20",    
+acCPUusageTooHighTrap, clear,
+"acCPUusageTooHighTrap",
+"AC设备CPU利用率过高告警已清除, 当前CPU利用率: $cpuUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.7",     
+acMemUsageTooHighTrap, major,
+"acMemUsageTooHighTrap",
+"AC设备内存利用率过高告警, 当前内存利用率: $memUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.21", 
+acMemUsageTooHighTrap, clear,
+"acMemUsageTooHighTrap",
+"AC设备内存利用率过高告警已清除, 当前内存利用率: $memUsage",
+[]}.
+
+
+{"1.3.6.1.4.1.29917.6.1.5.1.24",   
+acDHCPAddressExhaustTrap, major,
+"acDHCPAddressExhaustTrap_$dhcpName",
+"AC设备DHCP可分配地址耗尽告警, 地址池名称: $dhcpName, DHCP平均利用率: $dhcpAvgUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.25",   
+acDHCPAddressExhaustTrap, clear,
+"acDHCPAddressExhaustTrap_$dhcpName",
+"AC设备DHCP可分配地址耗尽告警, 地址池名称: $dhcpName, DHCP平均利用率: $dhcpAvgUsage",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.50",
+acHeartbeatTrap, major, 
+"acHeartbeatTrap_$acIp",
+"心跳周期通告, 设备IP地址: $acIp",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.0.3",  
+ipAddChangeTrap, major,
+"ipAddChangeTrap",
+"AC设备IP地址变更通告",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.2",      
+radiusAuthServerUnavailableTrap, major,
+"radiusAuthServerUnavailableTrap_$server",
+"Radius认证服务器不可达/不可用/无法连接告警, Radius认证服务器IP: $server, Radius认证服务器端口: $port",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.26",   
+radiusAuthServerUnavailableTrap, clear,
+"radiusAuthServerUnavailableTrap_$server",
+"Radius认证服务器不可达/不可用/无法连接告警已清除, Radius认证服务器IP: $server, Radius认证服务器端口: $port",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.3",      
+radiusAccServerUnavailableTrap, major,
+"radiusAccServerUnavailableTrap_$server",
+"Radius计费服务器不可达/不可用/无法连接告警, Radius计费服务器IP: $server, Radius计费服务器端口: $port",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.27",    
+radiusAccServerUnavailableTrap, clear,
+"radiusAccServerUnavailableTrap_$server",
+"Radius计费服务器不可达/不可用/无法连接告警已清除, Radius计费服务器IP: $server, Radius计费服务器端口: $port",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.4",
+portalServerUnavaibleTrap, major,
+"portalServerUnavaibleTrap_$acPortaltUrl",
+"Portal服务器不可达告警, Ac的Portal服务器的URL: $acPortaltUrl",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.1.28",    
+portalServerUnavaibleTrap, clear,
+"portalServerUnavaibleTrap_$acPortaltUrl",
+"Portal服务器不可达告警, Ac的Portal服务器的URL: $acPortaltUrl",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.0.4",  
+acTurnToBackupDeviceTrap, major,
+"acTurnToBackupDeviceTrap",
+"AC设备发生主备切换告警",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.0.2",  
+apACTimeSyncFailureTrap, major,
+"apACTimeSyncFailureTrap_$apmac",
+"AC设备与AP间系统时钟同步失败通告, AP MAC地址: $apmac",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.0.1",    
+systemWarmStartTrap, major, 
+"systemWarmStartTrap",
+"AC设备热启动。详细: $alarmInfo",
+[]}.
+
+{"1.3.6.1.4.1.29917.6.1.5.0.6",    
+systmColdStartTrap, major,
+"systmColdStartTrap",
+"AC设备冷启动。详细: $alarmInfo",
+[]}.
+

@@ -1,6 +1,3 @@
-%%%-----------------------------------------------------------------------------
-%%%comba trap mapper
-%%%-----------------------------------------------------------------------------
 {mapper, "1.3.6.1.4.1.17518.2400.30.71", cpuUsageTooHighTrap, [
 	{severity,	clear},
 	{source,	{fitap, "$apmac"}},
@@ -28,6 +25,14 @@
 	{evtkey,    "apOfflineTrap"},
 	{summary,	"AP设备下线告警, 设备标识: $apmac, 详细: $alarmAdditionalInfo"}
 ]}.
+
+{mapper, "1.3.6.1.4.1.17518.2400.30.23.0.0", apOfflineTrap, [
+	{severity,	major},
+	{source,	{fitap, "$apmac"}},
+	{evtkey,    "apOfflineTrap"},
+	{summary,	"AP设备下线告警, 设备标识: $apmac, 详细: $alarmAdditionalInfo"}
+]}.
+
 
 {mapper, "1.3.6.1.4.1.17518.2400.30.24", apOfflineTrap, [
 	{severity,	clear},
@@ -300,4 +305,16 @@
 	{evtkey,    "apACTimeSyncFailureTrap"}, 
 	{summary,	"AC与AP间系统时钟同步失败通告。$alarmAdditionalInfo"}
 ]}.
+
+{mapper, "1.3.6.1.4.1.17518.2400.30.53", acTemperatureTooHighTrap, [
+	{severity, major},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警, 详细: $alarmAdditionalInfo"}
+]}.
+
+{mapper, "1.3.6.1.4.1.17518.2400.30.54", acTemperatureTooHighTrap, [
+	{severity, clear},
+	{evtkey, "acTemperatureTooHighTrap"},
+	{summary, "AC设备温度过高告警已清除, 详细: $alarmAdditionalInfo"}
+]}.  
 
