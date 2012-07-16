@@ -1,0 +1,204 @@
+%%%-----------------------------------------------------------------------------
+%%%huawei trap 
+%%%-----------------------------------------------------------------------------
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.13", [
+    {1, apid,string},
+    {2,apmac, mac},
+    {3, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.14", [
+    {1, apid, string},
+    {2,apmac, mac},
+    {3, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.15", [
+    {1, apid,string},
+    {2,apmac, mac},
+    {3, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.16", [
+    {1, apid, string},
+    {2,apmac, mac},
+    {3, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.1",  [
+    {1, apid, string},
+    {4, apname, string},
+    {5, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.2", [
+    {1, apid, string},
+    {4, apname, string},
+    {5, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.4", [
+    {1,apid,string},
+    {2, apmac, mac},
+    {4,mode,integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.5", [
+    {1, apid, string},
+    {3, radio, integer},
+    {4, channel, integer},
+    {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.6", [
+    {1, apid, string},
+    {3, radio, integer},
+    {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.7", [
+    {1,apid, string},
+     {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.8", [
+    {1,apid, string},
+     {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.9", [
+    {1, apid, string},
+    {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.10", [
+    {1, apid, string},
+     {2, apmac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.11", [
+    {3, radio, integer},
+    {2, apmac, mac},
+    {4, channel, integer},
+    {1, apid, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.12", [
+    {3, radio, integer},
+    {2, apmac, mac},
+    {4, channel, integer},
+    {1, apid, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.13", [
+    {3, radio, integer},
+    {2, apmac, mac},
+    {1, apid, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.14", [
+    {3, radio, integer},
+    {2, apmac, mac},
+    {1, apid, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.17", [
+    {1,apid,string},
+    {2, apmac, mac},
+    {4, limitNum, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.18", [
+    {1, apid,string},
+    {2, apmac, mac},
+    {4, limitNum, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.3.24.1.1", [
+    {1, apid, string},
+    {2, radio, integer},
+    {4, apmac, mac},
+    {3, channel, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.6.9.1.1", [
+    {4, staBssid, mac},
+    {1, apid, string},
+    {2, apmac, mac},
+    {6, staMac, mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.6.9.1.2", [
+    {6, staMac, mac},
+    {5, ssidName, string},
+    {2, apmac, mac},
+    {1, apid, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.129.2.4.1", [
+    {6,usage, percent},
+    {8,threshold, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.129.2.4.2", [
+    {6,usage, percent},
+    {8,threshold, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.129.2.6.1", [
+    {6, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.129.2.6.2", [
+    {6, usage, percent}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.8.2.2.0.6", [
+    {1, poolName, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.8.2.2.0.7", [
+    {1, poolName, string}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.31.7.2.1", 
+    [{2, apmac,  mac}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.41.6.1", [
+    {1, maskaddr, ip}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.40.15.2.2.1.2", [
+    {1, addr, ip},
+    {2, port, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.40.15.2.2.1.1", [
+    {1, addr, ip},
+    {2, port, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.40.15.2.2.1.4", [
+    {1, addr, ip},
+    {2, port, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.25.40.15.2.2.1.3", [
+    {1, addr, ip},
+    {2, port, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.4.2.2.1.2", [
+    {1,server,ip}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.5.4.2.2.1.1",  [
+    {1,server,ip}
+]}.
+
+{parser, "1.3.6.1.4.1.2011.6.139.2.1.1.20", [
+    {1,apid,string},
+    {2,apmac,mac}
+]}.
+
