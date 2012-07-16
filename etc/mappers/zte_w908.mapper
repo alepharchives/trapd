@@ -307,17 +307,15 @@
 	{summary,	"AC与AP间系统时钟同步失败通告, AP MAC地址: $apmac"}
 ]}.
 
+{mapper, "1.3.6.1.4.1.3902.3.1.2.58", acTemperatureTooHighTrap, [
+    {severity, major},
+    {evtkey, "acTemperatureTooHighTrap"},
+    {summary,"AC设备温度过高告警, 详细: $alarmContent"}
+]}.
 
-{"1.3.6.1.4.1.3902.3.1.2.58", 
-acTemperatureTooHighTrap, major,
-"acTemperatureTooHighTrap",
-"AC设备温度过高告警, 详细: $alarmContent",
-[]}.
-
-{"1.3.6.1.4.1.3902.3.1.2.59", 
-acTemperatureTooHighTrap, clear,
-"acTemperatureTooHighTrap",
-"AC设备温度过高告警已清除, 详细: $alarmContent",
-[]}.
-
+{mapper, "1.3.6.1.4.1.3902.3.1.2.59", acTemperatureTooHighTrap, [
+    {severity, clear},
+    {evtkey, "acTemperatureTooHighTrap"},
+    {summary, "AC设备温度过高告警已清除, 详细: $alarmContent"}
+]}.
 
