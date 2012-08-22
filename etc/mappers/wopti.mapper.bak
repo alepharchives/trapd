@@ -9,3 +9,10 @@
 	{evtkey, "dot11StationAssocFailTrap_$apid_$staMac"},
 	{summary, "终端关联失败告警, APID: $apid, Radio: $radioID, 终端SSID: $ssidName, 终端MAC地址: $staMac, 失败原因: $failCauseDesc"}
 ]}.
+
+{mapper, "1.3.6.1.4.1.2011.10.2.75.3.2.0.4", dot11StationAssocFailTrap, [
+	{severity, event},
+	{source, {fitap, "$apid"}},
+	{evtkey, "dot11StationAssocFailTrap_$apid_$staMac"},
+	{summary, "终端关联失败告警, APID: $apid, Radio: $radioID, 终端SSID: $ssidName, 终端MAC地址: $staMac, 失败原因: $failCauseDesc"}
+]}.

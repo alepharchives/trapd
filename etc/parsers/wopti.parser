@@ -15,3 +15,11 @@
 	{6, apid, string} %6: h3cDot11CurrAPID—终端发生关联失败时对应的AP
 ]}.
 
+{parser, "1.3.6.1.4.1.2011.10.2.75.3.2.0.4", [
+	{1, staMac, mac}, %1: h3cDot11StationTrapStaMAC—终端MAC地址
+	{2, radioID, integer}, % 2: h3cDot11CurrRadioID—终端发生关联失败时对应的AP
+	{3, ssidName, string}, % 3: h3cDot11StationSSIDName--终端SSID
+	{4, assocFailCause, string}, % 4: h3cDot11StationAssocFailCause--终端关联失败原因值
+	{5, failCauseDesc, string}, %5 h3cDot11StationFailCauseDesc—终端关联失败原因描述
+	{6, apid, string} %6: h3cDot11CurrAPID—终端发生关联失败时对应的AP
+]}.
