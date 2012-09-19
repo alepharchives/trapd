@@ -162,6 +162,9 @@ format(mac, Val) ->
 format(ip, Val) ->
     trapd_misc:ipaddr(Val);
 
+format(percent, V) when is_list(V)->
+    V;
+    
 format(percent, V) when is_integer(V)->
     integer_to_list(V div 100).
 
