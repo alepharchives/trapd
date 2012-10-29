@@ -1,0 +1,65 @@
+%general varbinds
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.36.1.1.2", cpuUsage, percent}.
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.35.1.1.1.3", memUsage, percent}.
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.56.6.1.1", wtpSn, string}.
+
+{vardef, "1.3.6.1.2.1.145.1.5.1", capwapBaseNtfWtpId, string}.
+{vardef, "1.3.6.1.2.1.145.1.5.3", capwapBaseNtfChannelType, string}.
+{vardef, "1.3.6.1.2.1.145.1.5.4", capwapBaseNtfAuthenMethod, string}.
+{vardef, "1.3.6.1.2.1.145.1.5.5", capwapBaseNtfChannelDownReason, string}.
+
+
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.1.0", apAPMac, mac}.	 	    
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.2.0", apWorkModeAfterChange, string}.
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.3.0", apWorkModeAfterChange, string}.
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.4.0", apSSIDKey, string}.    		    
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.5.0", apSSIDKeyConflict, string}.	    
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.6.0", apCyperIndex, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.7.0", apInterruptReason, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.8.0", apWorkingAPRadioIfInfo, string}.     
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.9.0", apWorkingAPChannel, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.10.0", apWorkingAPChannel, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.11.0", apInterfAPChannel, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.12.0", apInterfStaMac, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.13.0", apPermitAssoUser, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.14.0", apAssoFailReason, string}. 		
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.20", apmac, mac}.
+{vardef, "1.3.6.1.4.1.4881.1.1.10.2.81.11.28.0", apSpeciousDeviceMac, string}. 		
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.17", [
+	{1, apmac, mac},
+	{3, usage, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.7", [
+	{1, apmac, mac},
+	{3, apWorkingAPChannel, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.8", [
+	{1, apmac, mac},
+	{3, apWorkingAPChannel, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.8", [
+	{1, apmac, mac},
+	{3, apWorkingAPChannel, integer}
+]}.
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.11", [
+	{1, apmac, mac},
+	{2, apPermitAssoUser, integer},
+	{3, apAssoFailReason, string}
+]}.
+
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.12", [
+	{1, apmac, mac},
+	{2, apPermitAssoUser, integer},
+	{3, apAssoFailReason, string}
+]}.
+
+{parser, "1.3.6.1.4.1.4881.1.1.10.2.81.0.2.13", [
+	{1, apmac, mac}
+]}.
+
