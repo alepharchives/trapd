@@ -164,7 +164,10 @@ format(ip, Val) ->
 
 format(percent, V) when is_list(V)->
     V;
-    
+
 format(percent, V) when is_integer(V)->
-    integer_to_list(V div 100).
+    integer_to_list(V div 100);
+format(percent, V) ->
+	V.
+
 
