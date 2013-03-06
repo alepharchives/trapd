@@ -608,5 +608,41 @@
 {parser, "1.3.6.1.4.1.33940.6.1.5.1.23",  
 []}.
 
+{parser, "1.3.6.1.4.1.33940.80.30.158", [
+	{1, totalAlarms, string}, 
+    {2, nodeId, string}, 
+    {3, alarmLevel, string},
+    {4, alarmType, string}, 
+    {5, alarmCauseid, integer}, 
+    {6, alarmCause, string},
+    {7, alarmEventTime, integer},
+    {9, alarmTitle, string},
+    {10, alarmAdditionalInfo, string}
+]}.
+
+{parser, "1.3.6.1.4.1.33940.80.30.174", [
+	{1, totalAlarms, string}, 
+    {2, nodeId, string}, 
+    {3, alarmLevel, string},
+    {4, alarmType, string}, 
+    {5, alarmCauseid, integer}, 
+    {6, alarmCause, string},
+    {7, alarmEventTime, integer},
+    {9, alarmTitle, string},
+    {10, alarmAdditionalInfo, string}
+]}.
+
+{parser, "1.3.6.1.4.1.33940.80.30.104", [
+	{1, totalAlarms, string}, 
+    {2, nodeId, string}, 
+    {3, alarmLevel, string},
+    {4, alarmType, string}, 
+    {5, alarmCauseid, integer}, 
+    {6, alarmCause, string},
+    {7, alarmEventTime, integer},
+    {9, alarmTitle, string},
+    {10, apmac, string}, 
+    {11, alarmAdditionalInfo, string}
+]}.
 
 
